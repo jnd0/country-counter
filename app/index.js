@@ -1,11 +1,21 @@
-import {View, Text} from "react-native";
+import {StyleSheet, View, Text} from "react-native";
+
+import Header from "./components/Header";
+import Box from "./components/Box";
 
 const Page = () => {
     return (
-        <View>
-            <Text>Home home home home page</Text>
+        <View style={styles.container}>
+            <Header />
+            <Box />
         </View>
     )
 }
 
-export default Page;
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    }
+});
+
+ export default Page;
